@@ -1,0 +1,60 @@
+@import "~bootstrap/scss/bootstrap";
+
+$app-background-color: black;
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+.custom-search {
+    margin-bottom: 20px;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    background: black;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    top: 0px;
+    z-index: 1;
+}
+
+.body {
+    margin-top: 100px;
+    color: black;
+    position: relative;
+}
+
+.in-center {
+    margin-left: 50%;
+    @include transform(translateX(-50%));
+}
+
+.entry {
+    padding: 15px;
+    width: 300px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    .buttons {
+        margin-top: 15px;
+    }
+}
+
+.input {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 769px) {
+    .entry {
+        width: 100%;
+    }
+}
+
+.entries {
+    max-width: 100%;
+}
