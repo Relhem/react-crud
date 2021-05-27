@@ -7,7 +7,6 @@ import globalStore from './store';
 import { Provider } from 'react-redux';
 
 function App() {
-  const a = 1;
   return Crud();
 }
 
